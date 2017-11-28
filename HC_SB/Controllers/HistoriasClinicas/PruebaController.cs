@@ -8,7 +8,7 @@ namespace HC_SB.Controllers.HistoriasClinicas
 {
     public class PruebaController : Controller
     {
-        // GET: Prueba
+        // GET: Prueba desde el controlador de tiño
         public ActionResult Index()
         {
             return View();

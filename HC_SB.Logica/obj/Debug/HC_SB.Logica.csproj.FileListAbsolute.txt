@@ -2,3 +2,7 @@ C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.pdb
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.pdb

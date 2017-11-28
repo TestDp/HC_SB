@@ -9,3 +9,15 @@ C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.pdb
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\es\EntityFramework.resources.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\HC_SB.Repositorio.dll.config
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\HC_SB.Repositorio.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\HC_SB.Repositorio.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.csprojResolveAssemblyReference.cache

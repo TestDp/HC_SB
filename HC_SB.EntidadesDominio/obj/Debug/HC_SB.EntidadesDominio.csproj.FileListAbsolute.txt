@@ -2,3 +2,7 @@ C:\Users\LaPoint\Desktop\HC_SB\HC_SB.EntidadesDominio\bin\Debug\HC_SB.EntidadesD
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.EntidadesDominio\bin\Debug\HC_SB.EntidadesDominio.pdb
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.EntidadesDominio\obj\Debug\HC_SB.EntidadesDominio.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB.EntidadesDominio\obj\Debug\HC_SB.EntidadesDominio.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.EntidadesDominio\bin\Debug\HC_SB.EntidadesDominio.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.EntidadesDominio\bin\Debug\HC_SB.EntidadesDominio.pdb
+C:\Users\Diego\Desktop\HC_SB\HC_SB.EntidadesDominio\obj\Debug\HC_SB.EntidadesDominio.dll
+C:\Users\Diego\Desktop\HC_SB\HC_SB.EntidadesDominio\obj\Debug\HC_SB.EntidadesDominio.pdb
