@@ -11,3 +11,4 @@ C:\Users\jcblandon\Desktop\HC_SB\HC_SB.InterfazManager\bin\Debug\HC_SB.InterfazM
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.InterfazManager\bin\Debug\HC_SB.InterfazManager.pdb
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.InterfazManager\obj\Debug\HC_SB.InterfazManager.dll
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.InterfazManager\obj\Debug\HC_SB.InterfazManager.pdb
+C:\Users\LaPoint\Desktop\HC_SB\HC_SB.InterfazManager\obj\Debug\HC_SB.InterfazManager.csprojResolveAssemblyReference.cache

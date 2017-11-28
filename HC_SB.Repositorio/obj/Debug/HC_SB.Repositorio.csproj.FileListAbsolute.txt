@@ -33,3 +33,4 @@ C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Repositorio\bin\Debug\es\EntityFramework.
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.csprojResolveAssemblyReference.cache
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.dll
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.pdb
+C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Repositorio\obj\Debug\HC_SB.Repositorio.csprojResolveAssemblyReference.cache

@@ -86,13 +86,8 @@ C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.dll
-C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.dll
-C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.Facebook.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\LaPoint\Desktop\HC_SB\HC_SB\bin\Newtonsoft.Json.dll

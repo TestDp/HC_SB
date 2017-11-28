@@ -10,3 +10,4 @@ C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Interfaces\bin\Debug\HC_SB.Interfaces.dll
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Interfaces\bin\Debug\HC_SB.Interfaces.pdb
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Interfaces\obj\Debug\HC_SB.Interfaces.dll
 C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Interfaces\obj\Debug\HC_SB.Interfaces.pdb
+C:\Users\LaPoint\Desktop\HC_SB\HC_SB.Interfaces\obj\Debug\HC_SB.Interfaces.csprojResolveAssemblyReference.cache
