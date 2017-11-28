@@ -6,3 +6,7 @@ C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.dll
 C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.pdb
 C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.dll
 C:\Users\Diego\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.pdb
+C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.dll
+C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Logica\bin\Debug\HC_SB.Logica.pdb
+C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.dll
+C:\Users\jcblandon\Desktop\HC_SB\HC_SB.Logica\obj\Debug\HC_SB.Logica.pdb
