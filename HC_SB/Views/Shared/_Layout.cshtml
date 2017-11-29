@@ -12,7 +12,7 @@
 </head>
 <body>
     @using Microsoft.AspNet.Identity
-    @RenderBody()
+   
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
@@ -25,41 +25,24 @@
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-home"></i>
-                        Home
+                        Historias Clínicas
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="#">Home 1</a></li>
-                        <li><a href="#">Home 2</a></li>
-                        <li><a href="#">Home 3</a></li>
+                        <li><a href="@Url.Action("BuscarHistoria", "HistoriasClinicas")">Buscar Historia</a></li>
+                        <li><a href="#">Crear Historia</a></li>                        
                     </ul>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="glyphicon glyphicon-briefcase"></i>
-                        About
-                    </a>
+                <li>                   
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-duplicate"></i>
-                        Pages
+                        Razón Social
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li><a href="#">Page 1</a></li>
-                        <li><a href="#">Page 2</a></li>
-                        <li><a href="#">Page 3</a></li>
+                        <li><a href="#">Buscar Visita</a></li>
+                        <li><a href="#">Crear Visita</a></li>                        
                     </ul>
                 </li>
-                <li>
-                    <a href="#">
-                        <i class="glyphicon glyphicon-link"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="glyphicon glyphicon-paperclip"></i>
-                        FAQ
-                    </a>
-                </li>
+                              
                 <li>
                     @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
                     {
@@ -67,7 +50,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                            @User.Identity.GetUserName()
                         </li>
                         <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
                     </ul>
@@ -98,7 +81,7 @@
             </nav>
 
             <div class="container body-content">
-
+                @RenderBody()
                 <hr />
                 <footer>
                     <p>&copy; @DateTime.Now.Year - Historias Clínicas San Bartolome</p>
