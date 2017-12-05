@@ -1,0 +1,28 @@
+﻿body {
+    background:#5d9f34 !important;
+    padding: 50px;
+    margin: 0px;
+    border:none;
+    width: 100%;
+}
+.col-md-2 {
+    width:100% !important;
+}
+input {
+    max-width:100% !important;
+}
+.col-md-10 {
+    width:100% !important;
+}
+
+p {
+    color:#ffffff;
+}
+.control-label {
+     color:#ffffff;
+     text-align:center !important;
+}
+
+.form-control {
+    display: inline-block !important;
+}

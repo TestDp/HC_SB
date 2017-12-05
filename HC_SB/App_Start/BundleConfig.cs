@@ -27,6 +27,8 @@ namespace HC_SB
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/style4.css"));
+            bundles.Add(new StyleBundle("~/Content/login").Include(
+                     "~/Content/login.css"));
         }
     }
 }
