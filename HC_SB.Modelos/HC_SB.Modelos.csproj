@@ -100,7 +100,11 @@
     <Compile Include="Autenticacion\IdentityModels.cs" />
     <Compile Include="Autenticacion\ManageViewModels.cs" />
     <Compile Include="HC_SBContext.cs" />
+    <Compile Include="HistoriasClinicas\Contacto.cs" />
+    <Compile Include="HistoriasClinicas\FormatoHistoriaClinica.cs" />
     <Compile Include="HistoriasClinicas\HistoriaClinica.cs" />
+    <Compile Include="HistoriasClinicas\Ocupacion.cs" />
+    <Compile Include="HistoriasClinicas\Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

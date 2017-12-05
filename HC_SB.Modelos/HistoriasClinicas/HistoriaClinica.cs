@@ -20,22 +20,35 @@ namespace HC_SB.Modelos.HistoriasClinicas
     public class HistoriaClinica
     {
         /// <summary>
-        /// 
+        /// Obtiene la clave primaria
         /// </summary>
         [Key]
-        public int PKHistoriaClinica { get; set; }
+        public int HistoriaClinicaKey { get; set; }
 
 
-        ///// <summary>
-        ///// Obtiene y establece la clave foranea a la tabla  sede.
-        ///// </summary>
-        //[ForeignKey("Sede")]
-        //public int FK_Sede { get; set; }
+        /// <summary>
+        /// Obtiene y establece la clave foranea a la tabla  Paciente.
+        /// </summary>
+        [ForeignKey("Paciente")]
+        public int HistoriaClinicaPacienteKey { get; set; }
 
-        ///// <summary>
-        ///// Obtiene y establece un objeto de sede.
-        ///// </summary>
-        //[ForeignKey("Pk_Id_Sede")]
-        //public virtual Sede Sede { get; set; }
+        /// <summary>
+        /// Obtiene y establece un objeto Paciente.
+        /// </summary>
+        [ForeignKey("PacienteKey")]
+        public virtual Paciente Paciente { get; set; }
+
+
+        /// <summary>
+        /// Obtiene y establece la clave foranea a la tabla  Paciente.
+        /// </summary>
+        [ForeignKey("FormatoHistoriaClinica")]
+        public int HistoriaClinicaFormatoHistoriaClinicaKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto Paciente.
+        /// </summary>
+        [ForeignKey("FormatoHistoriaClinicaKey")]
+        public virtual FormatoHistoriaClinica FormatoHistoriaClinica { get; set; }
     }
 }
