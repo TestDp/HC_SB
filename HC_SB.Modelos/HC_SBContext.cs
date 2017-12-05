@@ -22,6 +22,14 @@
         // sobre cómo configurar y usar un modelo Code First, vea http://go.microsoft.com/fwlink/?LinkId=390109.
 
         public virtual DbSet<HistoriaClinica> Tbl_HistoriasClinicas { get; set; }
+        public virtual DbSet<CiudadResidencia> Tbl_CiudadesResidencias { get; set; }
+        public virtual DbSet<Aseguradora> Tbl_Aseguradoras { get; set; }
+        public virtual DbSet<Contacto> Tbl_Contactos { get; set; }
+        public virtual DbSet<EstadoCivil> Tbl_EstadosCivil { get; set; }
+        public virtual DbSet<FormatoHistoriaClinica> Tbl_FormatosHistoriaClinica { get; set; }
+        public virtual DbSet<Genero> Tbl_Generos { get; set; }
+        public virtual DbSet<Ocupacion> Tbl_Ocupaciones { get; set; }
+        public virtual DbSet<Paciente> Tbl_Pacientes { get; set; }
     }
 
     //public class MyEntity
