@@ -6,15 +6,15 @@ using System.Web.Mvc;
 
 namespace HC_SB.Controllers.HistoriasClinicas
 {
-    public class HistoriasClinicasController : Controller
+    public class IdentificacionPacienteController : Controller
     {
-        // GET: HistoriasClinicas
+        // GET: IdentificacionPaciente
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult BuscarHistoria() 
+        public ActionResult CrearPaciente() 
         {
             return View();
         }
