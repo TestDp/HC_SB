@@ -1,5 +1,4 @@
 ﻿body {
-    background:#5d9f34 !important;
     padding: 50px;
     margin: 0px;
     border:none;
@@ -7,16 +6,21 @@
 }
 .col-md-2 {
     width:100% !important;
+    display: flex;
+    justify-content: center;
 }
 input {
     max-width:100% !important;
 }
 .col-md-10 {
     width:100% !important;
+    display: flex;
+    justify-content: center;
 }
 
 p {
     color:#ffffff;
+    text-align:center;
 }
 .control-label {
      color:#ffffff;
@@ -25,4 +29,23 @@ p {
 
 .form-control {
     display: inline-block !important;
+}
+
+.loginscreen {
+    background-image: url(images/fondo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#loginForm {
+    background:#5d9f34 !important;
+    padding: 0px 50px 50px 50px;
+    border: 1px solid #d9dee5;
+    box-shadow: #d9dee5 1px 1px 1px 1px;
+}
+@media (min-width: 992px) {
+    .col-md-offset-2 {
+        margin-left: 0px !important; 
+    }
 }
