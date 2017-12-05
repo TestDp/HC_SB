@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Juan Blandon.</author>
 // <date>04/12/2017</date>
-// <summary>Modelo que contiene la informacion de las Ocupaciones.</summary>
+// <summary>Modelo que contiene la informacion de la Ciudades de Residencia.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -15,18 +15,18 @@ using System.Threading.Tasks;
 
 namespace HC_SB.Modelos.HistoriasClinicas
 {
-    [Table("Tbl_Ocupaciones")]
-    public class Ocupacion
+    [Table("Tbl_CiudadesResidencia")]
+    public class CiudadResidencia
     {
         /// <summary>
         /// Obtiene la clave primaria
         /// </summary>
         [Key]
-        public int OcupacionKey { get; set; }
+        public int CiudadResidenciaKey { get; set; }
 
         /// <summary>
-        /// Obtiene y establece el nombre de la Ocupacion
+        /// Obtiene y establece el nombre del Contacto
         /// </summary>
-        public String OcupacionName { get; set; }
+        public String CiudadName { get; set; }
     }
 }

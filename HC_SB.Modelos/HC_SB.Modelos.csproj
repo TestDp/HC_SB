@@ -100,8 +100,12 @@
     <Compile Include="Autenticacion\IdentityModels.cs" />
     <Compile Include="Autenticacion\ManageViewModels.cs" />
     <Compile Include="HC_SBContext.cs" />
+    <Compile Include="HistoriasClinicas\Aseguradora.cs" />
+    <Compile Include="HistoriasClinicas\CiudadResidencia.cs" />
     <Compile Include="HistoriasClinicas\Contacto.cs" />
+    <Compile Include="HistoriasClinicas\EstadoCivil.cs" />
     <Compile Include="HistoriasClinicas\FormatoHistoriaClinica.cs" />
+    <Compile Include="HistoriasClinicas\Genero.cs" />
     <Compile Include="HistoriasClinicas\HistoriaClinica.cs" />
     <Compile Include="HistoriasClinicas\Ocupacion.cs" />
     <Compile Include="HistoriasClinicas\Paciente.cs" />

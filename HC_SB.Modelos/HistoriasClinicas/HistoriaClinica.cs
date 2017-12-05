@@ -1,9 +1,9 @@
 ﻿// <copyright file="Peligro.cs" company="Ada SA">
 // Copyright (c) 2017 All Rights Reserved
 // </copyright>
-// <author>Cristian Mauricio Arenas Gomez.</author>
-// <date>06/01/2017</date>
-// <summary>Modelo que contiene la informacion de los peligros registrados.</summary>
+// <author>Juan Blandon.</author>
+// <date>04/12/2017</date>
+// <summary>Modelo que contiene la informacion de la Hitoria Clinica.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -50,5 +50,11 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// </summary>
         [ForeignKey("FormatoHistoriaClinicaKey")]
         public virtual FormatoHistoriaClinica FormatoHistoriaClinica { get; set; }
+
+
+        /// <summary>
+        /// Obtiene y establece el Id (formato unico de Historia Clinica)
+        /// </summary>
+        public int HistoriaClinicaID { get; set; }
     }
 }

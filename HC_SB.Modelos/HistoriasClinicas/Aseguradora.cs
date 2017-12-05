@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Juan Blandon.</author>
 // <date>04/12/2017</date>
-// <summary>Modelo que contiene la informacion de las Ocupaciones.</summary>
+// <summary>Modelo que contiene la informacion de las Aseguradoras.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -15,18 +15,18 @@ using System.Threading.Tasks;
 
 namespace HC_SB.Modelos.HistoriasClinicas
 {
-    [Table("Tbl_Ocupaciones")]
-    public class Ocupacion
+    [Table("Tbl_Aseguradoras")]
+    public class Aseguradora
     {
         /// <summary>
         /// Obtiene la clave primaria
         /// </summary>
         [Key]
-        public int OcupacionKey { get; set; }
+        public int AseguradoraKey { get; set; }
 
         /// <summary>
-        /// Obtiene y establece el nombre de la Ocupacion
+        /// Obtiene y establece el nombre de la Aseguradora
         /// </summary>
-        public String OcupacionName { get; set; }
+        public String AseguradoraName { get; set; }
     }
 }

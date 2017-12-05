@@ -1,9 +1,9 @@
 ﻿// <copyright file="Peligro.cs" company="Ada SA">
 // Copyright (c) 2017 All Rights Reserved
 // </copyright>
-// <author>Cristian Mauricio Arenas Gomez.</author>
-// <date>06/01/2017</date>
-// <summary>Modelo que contiene la informacion de los peligros registrados.</summary>
+// <author>Juan Blandon.</author>
+// <date>04/12/2017</date>
+// <summary>Modelo que contiene la informacion del Paciente.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -55,10 +55,18 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// </summary>
         public String PacienteTelefono { get; set; }
 
+
         /// <summary>
-        /// Obtiene y establece el Aseguradora del paciente
+        /// Obtiene y establece la clave foranea a la tabla  Aseguradora.
         /// </summary>
-        public String PacienteAseguradora { get; set; }
+        [ForeignKey("Aseguradora")]
+        public int PacienteAseguradoraKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto Aseguradora.
+        /// </summary>
+        [ForeignKey("AseguradoraKey")]
+        public virtual Aseguradora Aseguradora { get; set; }
 
         /// <summary>
         /// Obtiene y establece el Tipo de vinculacion del paciente
@@ -66,24 +74,47 @@ namespace HC_SB.Modelos.HistoriasClinicas
         public String PacienteTipoVincualacion { get; set; }
 
         /// <summary>
-        /// Obtiene y establece el Lugar de Residencia del paciente
+        /// Obtiene y establece la clave foranea a la tabla  Genero.
         /// </summary>
-        public String PacienteLugarResidencia { get; set; }
+        [ForeignKey("CiudadResidencia")]
+        public int PacienteCiudadResidenciaKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto CiudadResidencia.
+        /// </summary>
+        [ForeignKey("CiudadResidenciaKey")]
+        public virtual CiudadResidencia CiudadResidencia { get; set; }
 
         /// <summary>
         /// Obtiene y establece la direccion del paciente
         /// </summary>
         public String PacienteDireccion { get; set; }
 
-        /// <summary>
-        /// Obtiene y establece el genero del paciente
-        /// </summary>
-        public String PacienteGenero { get; set; }
 
         /// <summary>
-        /// Obtiene y establece el Estado civil del paciente
+        /// Obtiene y establece la clave foranea a la tabla  Genero.
         /// </summary>
-        public String PacienteEstadoCivil { get; set; }
+        [ForeignKey("Genero")]
+        public int PacienteGeneroKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto Genero.
+        /// </summary>
+        [ForeignKey("GeneroKey")]
+        public virtual Genero Genero { get; set; }
+
+
+        /// <summary>
+        /// Obtiene y establece la clave foranea a la tabla  EsatdoCivil.
+        /// </summary>
+        [ForeignKey("EstadoCivil")]
+        public int PacienteEstadoCivilKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto EsatdoCivil.
+        /// </summary>
+        [ForeignKey("EsatdoCivilKey")]
+        public virtual EstadoCivil EstadoCivil { get; set; }
 
         /// <summary>
         /// Obtiene y establece el nivel educativo del paciente
@@ -125,5 +156,15 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// </summary>
         [ForeignKey("OcupacionKey")]
         public virtual Ocupacion Ocupacion { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece el motivo de ingreso del paciente
+        /// </summary>
+        public String PacienteMotivoIngreso { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece el motivo de ingreso del paciente
+        /// </summary>
+        public String PacienteMotivoConsulta { get; set; }
     }
 }

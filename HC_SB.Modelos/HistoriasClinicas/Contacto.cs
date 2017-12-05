@@ -1,9 +1,9 @@
 ﻿// <copyright file="Peligro.cs" company="Ada SA">
 // Copyright (c) 2017 All Rights Reserved
 // </copyright>
-// <author>Cristian Mauricio Arenas Gomez.</author>
-// <date>06/01/2017</date>
-// <summary>Modelo que contiene la informacion de los peligros registrados.</summary>
+// <author>Juan Blandon.</author>
+// <date>04/12/2017</date>
+// <summary>Modelo que contiene la informacion de los Contatos del Paciente.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -23,5 +23,10 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// </summary>
         [Key]
         public int ContactoKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece el nombre del Contacto
+        /// </summary>
+        public String ContactoName { get; set; }
     }
 }

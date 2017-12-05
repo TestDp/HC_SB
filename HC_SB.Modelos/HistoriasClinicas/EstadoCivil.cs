@@ -3,7 +3,7 @@
 // </copyright>
 // <author>Juan Blandon.</author>
 // <date>04/12/2017</date>
-// <summary>Modelo que contiene la informacion de las Ocupaciones.</summary>
+// <summary>Modelo que contiene la informacion de los Estados Civiles.</summary>
 
 using System;
 using System.Collections.Generic;
@@ -15,18 +15,18 @@ using System.Threading.Tasks;
 
 namespace HC_SB.Modelos.HistoriasClinicas
 {
-    [Table("Tbl_Ocupaciones")]
-    public class Ocupacion
+    [Table("Tbl_EstadosCivil")]
+    public class EstadoCivil
     {
         /// <summary>
         /// Obtiene la clave primaria
         /// </summary>
         [Key]
-        public int OcupacionKey { get; set; }
+        public int EstadoCivilKey { get; set; }
 
         /// <summary>
         /// Obtiene y establece el nombre de la Ocupacion
         /// </summary>
-        public String OcupacionName { get; set; }
+        public String EstadoCivilName { get; set; }
     }
 }
