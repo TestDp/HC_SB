@@ -12,7 +12,7 @@
 </head>
 <body>
     @using Microsoft.AspNet.Identity
-   
+
     <div class="wrapper">
         <!-- Sidebar Holder -->
         <nav id="sidebar">
@@ -28,36 +28,67 @@
                         Historias Clínicas
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="#">Buscar Paciente</a></li>                        
-                        <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Paciente</a></li>
+                        <li>
+                            <a href="#IdentificacionPaciente" data-toggle="collapse" aria-expanded="false">Identificación Paciente</a>
+                            <ul class="collapse list-unstyled" id="IdentificacionPaciente">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Paciente</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Paciente</a></li>
+                            </ul>
+                            <a href="#EntrevistaPsicologica" data-toggle="collapse" aria-expanded="false">Entrevista Inicial psicológica</a>
+                            <ul class="collapse list-unstyled" id="EntrevistaPsicologica">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Entrevista psicológica</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Entrevista psicológica</a></li>
+                            </ul>
+                            <a href="#EvaluaciónPsicologica" data-toggle="collapse" aria-expanded="false">Evaluación Inicial psicológica</a>
+                            <ul class="collapse list-unstyled" id="EvaluaciónPsicologica">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Evaluación psicológica</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Evaluación psicológica</a></li>
+                            </ul>
+                            <a href="#HojaDeTratamiento" data-toggle="collapse" aria-expanded="false">Hoja de tratamiento</a>
+                            <ul class="collapse list-unstyled" id="HojaDeTratamiento">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Hoja de tratamiento</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Hoja de tratamiento</a></li>
+                            </ul>
+                            <a href="#DiagnósticoFamiliar" data-toggle="collapse" aria-expanded="false">Diagnóstico Familiar</a>
+                            <ul class="collapse list-unstyled" id="DiagnósticoFamiliar">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Diagnóstico</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Diagnóstico</a></li>
+                            </ul>
+                            <a href="#Evaluación" data-toggle="collapse" aria-expanded="false">Evaluación</a>
+                            <ul class="collapse list-unstyled" id="Evaluación">
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Buscar Evaluación</a></li>
+                                <li><a href="@Url.Action("CrearPaciente", "IdentificacionPaciente")">Crear Evaluación</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                   
                 </li>
-                <li>                   
+                <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="glyphicon glyphicon-duplicate"></i>
                         Trabajo Social
                     </a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
                         <li><a href="#">Buscar Visita</a></li>
-                        <li><a href="@Url.Action("CrearVisita", "TrabajoSocial")">Crear Visita</a></li>                        
+                        <li><a href="@Url.Action("CrearVisita", "TrabajoSocial")">Crear Visita</a></li>
                     </ul>
                 </li>
-                              
+
                 <li>
                     @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
                     {
-                    @Html.AntiForgeryToken()
+                        @Html.AntiForgeryToken()
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            @User.Identity.GetUserName()
-                        </li>
-                        <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
-                    </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                @User.Identity.GetUserName()
+                            </li>
+                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
+                        </ul>
                     }
                 </li>
-               
-                
+
+
             </ul>
 
 
