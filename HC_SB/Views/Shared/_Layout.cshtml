@@ -17,8 +17,8 @@
         <!-- Sidebar Holder -->
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>Cristian Arenas</h3>
-                <strong>SB</strong>
+                <center><img src="~/Content/images/logo-sanbartolome.png" /></center>
+                <strong>Bienvenido @User.Identity.GetUserName()</strong>
             </div>
 
             <ul class="list-unstyled components">
@@ -75,14 +75,11 @@
                 </li>
 
                 <li>
-                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
                     {
                         @Html.AntiForgeryToken()
 
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                @User.Identity.GetUserName()
-                            </li>
+                        <ul class="cerrarSesion">
                             <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
                         </ul>
                     }
