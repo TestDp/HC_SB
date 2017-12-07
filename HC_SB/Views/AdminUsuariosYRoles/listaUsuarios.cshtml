@@ -30,7 +30,8 @@
             @Html.DisplayFor(modelItem => item.userName)
         </td>        
         <td>
-            @Html.DisplayFor(modelItem => item.rol)
+            @Html.ActionLink("Roles", "RolesPorUsuario", new { id = item.IDUser }) |
+            @Html.ActionLink("Eliminar", "EliminarUsuario", new { idUser = item.IDUser })
         </td>
         
     </tr>

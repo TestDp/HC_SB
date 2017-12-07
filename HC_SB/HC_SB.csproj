@@ -262,6 +262,10 @@
     <Content Include="Views\TrabajoSocial\CrearVisita.cshtml" />
     <Content Include="Views\IdentificacionPaciente\CrearPaciente.cshtml" />
     <Content Include="Views\AdminUsuariosYRoles\listaUsuarios.cshtml" />
+    <Content Include="Views\AdminUsuariosYRoles\listaRoles.cshtml" />
+    <Content Include="Views\AdminUsuariosYRoles\RolesPorUsuario.cshtml" />
+    <Content Include="Views\AdminUsuariosYRoles\AgregarRolUsuario.cshtml" />
+    <Content Include="Views\AdminUsuariosYRoles\CrearRol.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

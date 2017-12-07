@@ -89,8 +89,8 @@
                                 Configuración de Maestros
                             </a>
                             <ul class="collapse list-unstyled" id="pageMaestros">
-                                <li><a href="#">Buscar Visita</a></li>
-                                <li><a href="@Url.Action("CrearVisita", "TrabajoSocial")">Crear Visita</a></li>
+                                <li><a href="#">Maestro 1</a></li>
+                                <li><a href="#")">Maestro 2</a></li>
                             </ul>
                         </li>
                         <li>
@@ -99,8 +99,10 @@
                                 Usuarios y roles del Sistema
                             </a>
                             <ul class="collapse list-unstyled" id="pageUsuariosSistema">
-                                <li><a href="@Url.Action("listaUsuarios", "AdminUsuariosYRoles")">Buscar usuario</a></li>
+                                <li><a href="@Url.Action("listaUsuarios", "AdminUsuariosYRoles")">Usuarios</a></li>
                                 <li>@Html.ActionLink("Crear Usuario", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                                <li><a href="@Url.Action("listaRoles", "AdminUsuariosYRoles")">Roles</a></li>
+                                <li><a href="@Url.Action("CrearRol", "AdminUsuariosYRoles")">Crear Rol</a></li>
                             </ul>
                         </li>
                     }

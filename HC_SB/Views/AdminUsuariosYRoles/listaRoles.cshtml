@@ -1,0 +1,31 @@
+﻿@model IEnumerable<HC_SB.EntidadesDominio.Autenticacion.EDRol>
+
+@{
+    ViewBag.Title = "listaRoles";
+}
+
+<h2>Roles</h2>
+
+
+<table class="table">
+    <tr>
+        
+        <th>
+            Rol
+        </th>
+        <th>Acciones</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreRol)
+        </td>
+        <td>
+           @Html.ActionLink("Eliminar", "EliminarRol", new { idRol = item.IdRol, rolName = item.nombreRol })
+        </td>
+    </tr>
+}
+
+</table>

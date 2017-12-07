@@ -19,6 +19,8 @@ namespace HC_SB.EntidadesDominio.Autenticacion
         
         public string rol { get; set; }
 
+        public List<EDRol> roles { get; set; }
+
         
     }
 }
