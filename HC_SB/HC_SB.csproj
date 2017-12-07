@@ -85,10 +85,6 @@
       <HintPath>..\packages\Microsoft.Owin.Security.Google.3.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.Owin.Security.Twitter, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
       <Private>True</Private>
@@ -265,6 +261,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\TrabajoSocial\CrearVisita.cshtml" />
     <Content Include="Views\IdentificacionPaciente\CrearPaciente.cshtml" />
+    <Content Include="Views\AdminUsuariosYRoles\listaUsuarios.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -272,13 +269,16 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\HistoriasClinicas\" />
     <Folder Include="Scripts\TrabajoSocial\" />
-    <Folder Include="Views\AdminUsuariosYRoles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\HC_SB.EntidadesDominio\HC_SB.EntidadesDominio.csproj">
+      <Project>{f86be932-7734-4a69-b90a-93bce2ac2100}</Project>
+      <Name>HC_SB.EntidadesDominio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HC_SB.Modelos\HC_SB.Modelos.csproj">
       <Project>{582332e8-f1cd-407d-b23c-3905e46df9bc}</Project>
       <Name>HC_SB.Modelos</Name>

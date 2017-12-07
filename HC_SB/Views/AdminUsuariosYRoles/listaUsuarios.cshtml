@@ -1,0 +1,39 @@
+﻿@model IEnumerable<HC_SB.EntidadesDominio.Autenticacion.EDUsuarioSistema>
+
+@{
+    ViewBag.Title = "listaUsuarios";
+}
+
+<h2>Usuarios</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Nombre Completo
+        </th>
+        <th>
+           Usuario
+        </th>        
+        <th>
+           Acciones
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreCompleto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.userName)
+        </td>        
+        <td>
+            @Html.DisplayFor(modelItem => item.rol)
+        </td>
+        
+    </tr>
+}
+
+</table>

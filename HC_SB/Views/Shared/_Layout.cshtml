@@ -99,7 +99,7 @@
                                 Usuarios y roles del Sistema
                             </a>
                             <ul class="collapse list-unstyled" id="pageUsuariosSistema">
-                                <li><a href="#">Buscar usuario</a></li>
+                                <li><a href="@Url.Action("listaUsuarios", "AdminUsuariosYRoles")">Buscar usuario</a></li>
                                 <li>@Html.ActionLink("Crear Usuario", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
                             </ul>
                         </li>
