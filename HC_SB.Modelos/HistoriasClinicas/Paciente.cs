@@ -121,29 +121,29 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// </summary>
         public String PacienteNivelEducativo { get; set; }
 
-        /// <summary>
-        /// Obtiene y establece la clave foranea a la tabla  Contacto (Responsable).
-        /// </summary>
-        [ForeignKey("Contacto")]
-        public int PacienteContacto1Key { get; set; }
+        ///// <summary>
+        ///// Obtiene y establece la clave foranea a la tabla  Contacto (Responsable).
+        ///// </summary>
+        //[ForeignKey("Contacto")]
+        //public int PacienteContacto1Key { get; set; }
 
-        /// <summary>
-        /// Obtiene y establece un objeto Contacto.
-        /// </summary>
-        [ForeignKey("ContactoKey")]
-        public virtual Contacto Contacto1 { get; set; }
+        ///// <summary>
+        ///// Obtiene y establece un objeto Contacto.
+        ///// </summary>
+        //[ForeignKey("ContactoKey")]
+        //public virtual Contacto Contacto1 { get; set; }
 
-        /// <summary>
-        /// Obtiene y establece la clave foranea a la tabla  Contacto (Acompañante).
-        /// </summary>
-        [ForeignKey("Contacto")]
-        public int PacienteContacto2Key { get; set; }
+        ///// <summary>
+        ///// Obtiene y establece la clave foranea a la tabla  Contacto (Acompañante).
+        ///// </summary>
+        //[ForeignKey("Contacto")]
+        //public int PacienteContacto2Key { get; set; }
 
-        /// <summary>
-        /// Obtiene y establece un objeto Contacto.
-        /// </summary>
-        [ForeignKey("ContactoKey")]
-        public virtual Contacto Contacto2 { get; set; }
+        ///// <summary>
+        ///// Obtiene y establece un objeto Contacto.
+        ///// </summary>
+        //[ForeignKey("ContactoKey")]
+        //public virtual Contacto Contacto2 { get; set; }
 
         /// <summary>
         /// Obtiene y establece la clave foranea a la tabla  Ocupacion.

@@ -1,4 +1,4 @@
-﻿// <copyright file="Peligro.cs" company="Ada SA">
+﻿// <copyright file="Contacto.cs" company="dpsoluciones SA">
 // Copyright (c) 2017 All Rights Reserved
 // </copyright>
 // <author>Juan Blandon.</author>
@@ -28,5 +28,19 @@ namespace HC_SB.Modelos.HistoriasClinicas
         /// Obtiene y establece el nombre del Contacto
         /// </summary>
         public String ContactoName { get; set; }
+
+
+        /// <summary>
+        /// Obtiene y establece la clave foranea a la tabla  Paciente.
+        /// </summary>
+        [ForeignKey("Paciente")]
+        public int ContactoPacienteKey { get; set; }
+
+        /// <summary>
+        /// Obtiene y establece un objeto de paciente.
+        /// </summary>
+        [ForeignKey("PacienteKey")]
+        public virtual Paciente Paciente { get; set; }
+
     }
 }

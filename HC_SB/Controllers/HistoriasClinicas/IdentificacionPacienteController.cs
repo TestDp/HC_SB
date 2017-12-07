@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HC_SB.Authorize;
+
 
 namespace HC_SB.Controllers.HistoriasClinicas
 {
@@ -14,6 +16,7 @@ namespace HC_SB.Controllers.HistoriasClinicas
             return View();
         }
 
+       [HC_SBAuthorize(Roles = "Admin")]
         public ActionResult CrearPaciente() 
         {
             return View();

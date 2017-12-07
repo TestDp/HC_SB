@@ -64,6 +64,10 @@ namespace HC_SB.Modelos.Autenticacion
 
     public class RegisterViewModel
     {
+        [Required]      
+        [Display(Name = "Nombre Completo")]
+        public string nombreCompleto { get; set; }
+
         [Required]
         [EmailAddress]
         [Display(Name = "Correo electrónico")]
@@ -83,7 +87,7 @@ namespace HC_SB.Modelos.Autenticacion
 
     public class ResetPasswordViewModel
     {
-        [Required]
+       [Required]
         [EmailAddress]
         [Display(Name = "Correo electrónico")]
         public string Email { get; set; }

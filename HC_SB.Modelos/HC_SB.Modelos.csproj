@@ -96,10 +96,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutenticacionMigrations\201712052122081_InicialAutenticacion.cs" />
+    <Compile Include="AutenticacionMigrations\201712052122081_InicialAutenticacion.Designer.cs">
+      <DependentUpon>201712052122081_InicialAutenticacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutenticacionMigrations\Configuration.cs" />
     <Compile Include="Autenticacion\AccountViewModels.cs" />
     <Compile Include="Autenticacion\IdentityModels.cs" />
     <Compile Include="Autenticacion\ManageViewModels.cs" />
     <Compile Include="HC_SBContext.cs" />
+    <Compile Include="HC_SBMigrations\201712061945490_Inicial.cs" />
+    <Compile Include="HC_SBMigrations\201712061945490_Inicial.Designer.cs">
+      <DependentUpon>201712061945490_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HC_SBMigrations\Configuration.cs" />
     <Compile Include="HistoriasClinicas\Aseguradora.cs" />
     <Compile Include="HistoriasClinicas\CiudadResidencia.cs" />
     <Compile Include="HistoriasClinicas\Contacto.cs" />
@@ -119,6 +129,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TrabajoSocial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AutenticacionMigrations\201712052122081_InicialAutenticacion.resx">
+      <DependentUpon>201712052122081_InicialAutenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HC_SBMigrations\201712061945490_Inicial.resx">
+      <DependentUpon>201712061945490_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
