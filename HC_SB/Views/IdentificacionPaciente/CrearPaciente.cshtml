@@ -1,7 +1,210 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "CrearPaciente";
 }
 
-<h2>CrearPaciente</h2>
+<h2>Identificación del  Paciente</h2>
 
+<form id="crearPaciente" method="post">
+    <div class="row">
+        <div class="col-md-5">
+            <h5><b>Fecha de Ingreso :</b></h5>
+        </div>
+        <div class="col-md-3" style="margin-left:-8%">
+            @{
+                DateTime fechaActual = DateTime.Now;
+            }
+            <input type="date" id="FechaCreacionPaciente" name="FechaCreacionPaciente" class="form-control" value="@fechaActual.ToString("yyyy-MM-dd")" readonly />
+        </div>
+    </div>
+
+    <div class="panel-body form-horizontal">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="col-md-12">Nombre y Apellidos</label>
+                    <div class="col-md-12">
+                        <input type="text" id="NombrePaciente" name="NombrePaciente" class="form-control" />
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-md-7">Documento  De Identidad</label>
+                    <div class="col-md-12">
+                        <input type="number" id="Documento" name="Documento" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-md-8">Edad</label>
+                    <div class="col-md-12">
+                        <input type="number" id="Edad" name="Edad" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-md-12">RH</label>
+                    <div class="col-md-12">
+                        <input id="RH" name="RH" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-7">Fecha Nacimiento</label>
+                    <div class="col-md-12">
+                        <input type="date" id="FechaNacimiento" name="FechaNacimiento" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-12">Telefonos</label>
+                    <div class="col-md-12">
+                        <input type="text" id="Telefono" name="Telefono" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-7">Aseguradora</label>
+                    <div class="col-md-12">
+                        <input type="date" id="AseguradoraKey" name="AseguradoraKey" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-12">Tipo de Vinculación</label>
+                    <div class="col-md-12">
+                        <input type="text" id="TipoVincualacion" name="TipoVinculacion" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="col-md-5">Departamento:</label>
+                    <div class="col-md-10">
+                        <select class="form-control"></select>
+                        @*@Html.DropDownList("Fk_Id_Departamento", null, htmlAttributes: new { @class = "form-control", @onchange = "BuscarMunicipios()" }, optionLabel: "-- Seleccionar --")*@
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label class="col-md-5">Municipio:</label>
+                        <div class="col-md-10">
+                            <select class="form-control"></select>
+                            @*<select class="form-control" id="Fk_Id_Municipio" name="Fk_Id_Municipio"></select>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-12">Dirección</label>
+                    <div class="col-md-12">
+                        <input type="text" id="Direccion" name="Direccion" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"  id="RadioBtnTipoGenero">
+                <fieldset class="radiogroup">
+                    <div class="radio">
+                        <div>
+                            <label><input type="radio" name="FLG_Tipo_De_Calificacion" value="1"/>Masculino<b></b></label>
+                        </div>
+                        <div>
+                            <label><input type="radio"  name="FLG_Tipo_De_Calificacion" value="2"/><b>Femenino</b></label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>  
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label class="col-md-5">Estado Civil:</label>
+                        <div class="col-md-10">
+                            <select class="form-control"></select>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <div class="form-group">
+                        <label class="col-md-5">Nivel Educativo:</label>
+                        <div class="col-md-10">
+                           <select class="form-control"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-7">Nombre del Acompañante</label>
+                    <div class="col-md-12">
+                        <input type="text" id="AseguradoraKey" name="AseguradoraKey" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-12">Telefono</label>
+                    <div class="col-md-12">
+                        <input type="text" id="TipoVincualacion" name="TipoVinculacion" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-7">Nombre del Responsable</label>
+                    <div class="col-md-12">
+                        <input type="text" id="AseguradoraKey" name="AseguradoraKey" class="form-control" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="col-md-12">Teléfono</label>
+                    <div class="col-md-12">
+                        <input type="text" id="TipoVincualacion" name="TipoVinculacion" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <label class="col-md-7">Parentezco del Responsable</label>
+                    <div class="col-md-12">
+                        <select class="form-control"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HistoriasClinicas\IdentificacionPacienteManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,8 +56,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HistoriasClinicas\" />
     <Folder Include="TrabajoSocial\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HC_SB.Interfaces\HC_SB.Interfaces.csproj">
+      <Project>{33a24508-33b5-4ece-80a2-2b12e1cb1ee0}</Project>
+      <Name>HC_SB.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
